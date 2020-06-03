@@ -1,0 +1,14 @@
+NAME : square
+COMMENT : square by warren g. jackson
+POSTAL_OFFICE
+0 0
+WORKER_ADDRESS
+0 5
+POSTAL_ADDRESSES
+5 0
+10 0
+10 5
+10 10
+5 10
+0 10
+EOF
