@@ -1,5 +1,7 @@
 package com.aim.project.pwp.hyperheuristics.moveAcceptance;
 
+import com.aim.project.pwp.interfaces.CoolingSchedule;
+
 public class LundyAndMees implements CoolingSchedule{
 	
 	private double dCurrentTemperature;

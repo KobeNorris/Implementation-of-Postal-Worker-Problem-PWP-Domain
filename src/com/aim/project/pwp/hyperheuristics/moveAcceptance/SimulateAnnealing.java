@@ -2,6 +2,8 @@ package com.aim.project.pwp.hyperheuristics.moveAcceptance;
 
 import java.util.Random;
 
+import com.aim.project.pwp.interfaces.CoolingSchedule;
+
 public class SimulateAnnealing {
 	private CoolingSchedule oCoolingSchedule;
 	

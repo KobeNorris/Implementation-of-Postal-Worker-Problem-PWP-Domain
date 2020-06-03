@@ -3,19 +3,19 @@ package com.aim.project.pwp.runners;
 import java.awt.Color;
 
 import com.aim.project.pwp.AIM_PWP;
-import com.aim.project.pwp.hyperheuristics.MA_MP;
+import com.aim.project.pwp.hyperheuristics.RL_RWSA_HH;
 import com.aim.project.pwp.visualiser.PWPView;
 
 import AbstractClasses.HyperHeuristic;
 
 public class Scykw1_VirtualRunner extends HH_Runner_Visual{
 	
-	private int iNumberOfTrials = 9;
+	private int iNumberOfTrials = 11;
 	
 	@Override
 	protected HyperHeuristic getHyperHeuristic(long seed) {
 		
-		return new MA_MP(seed);
+		return new RL_RWSA_HH(seed);
 	}
 	
 	public static void main(String[] args) {
@@ -26,7 +26,7 @@ public class Scykw1_VirtualRunner extends HH_Runner_Visual{
 	
 	@Override
 	public void run() {
-		long seed, timeLimit = 60_000L;
+		long seed, timeLimit;
 		
 		AIM_PWP oProblem;
 		HyperHeuristic oHyperHeuristic;
@@ -36,6 +36,7 @@ public class Scykw1_VirtualRunner extends HH_Runner_Visual{
 		
 		for(int iIterationCounter = 0; iIterationCounter < iNumberOfTrials; iIterationCounter++) {
 			seed = System.currentTimeMillis();
+			timeLimit = 71_500L;
 			oProblem = new AIM_PWP(seed);
 			oProblem.loadInstance(3);
 			

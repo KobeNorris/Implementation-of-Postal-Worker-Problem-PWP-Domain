@@ -18,7 +18,7 @@ public abstract class HyFlexTestFrame {
 	/*
 	 * TODO - you should change this based on your computer's performance!
 	 */
-	protected final long MILLISECONDS_IN_TEN_MINUTES = 71_500L;
+	protected final long MILLISECONDS_IN_TEN_MINUTES = 715_000L;
 
 	public HyFlexTestFrame() {
 		

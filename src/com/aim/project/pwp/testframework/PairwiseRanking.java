@@ -3,12 +3,13 @@ package com.aim.project.pwp.testframework;
 import com.aim.project.pwp.AIM_PWP;
 import com.aim.project.pwp.hyperheuristics.RL_RWSA_HH;
 import com.aim.project.pwp.hyperheuristics.SR_IE_HH;
+import com.aim.project.pwp.testframework.HyFlexTestFrame;
 
 import AbstractClasses.HyperHeuristic;
 
 public class PairwiseRanking extends HyFlexTestFrame{
 	
-	private final int[] aiInstanceIndex = {3};
+	private final int[] aiInstanceIndex = {2,3,4};
 	
 	private double[] adMYHeuristicResults, adSRHeuristicResults;
 	
@@ -70,7 +71,7 @@ public class PairwiseRanking extends HyFlexTestFrame{
 			oProblem.loadInstance(this.aiInstanceIndex[iInstanceIndex]);
 			
 			oHyperHeuristic = getMYHyperHeuristic(SEEDS[iIterationCounter]);
-			oHyperHeuristic.setTimeLimit(MILLISECONDS_IN_TEN_MINUTES);
+			oHyperHeuristic.setTimeLimit(MILLISECONDS_IN_TEN_MINUTES / 10);
 			oHyperHeuristic.loadProblemDomain(oProblem);
 			oHyperHeuristic.run();
 			
@@ -82,8 +83,8 @@ public class PairwiseRanking extends HyFlexTestFrame{
 				dBestResult = adMYHeuristicResults[iIterationCounter];
 		}
 		System.out.println();
-		System.out.println("Memetic Algorithm Aver Value = " + dAverageResult / getTotalRuns());
-		System.out.println("Memetic Algorithm Best Value = " + dBestResult);
+		System.out.println("YOUR_HH Aver Value = " + dAverageResult / getTotalRuns());
+		System.out.println("YOUR_HH Best Value = " + dBestResult);
 		System.out.println("\n");
 		
 		dAverageResult = 0;
@@ -94,7 +95,7 @@ public class PairwiseRanking extends HyFlexTestFrame{
 			oProblem.loadInstance(this.aiInstanceIndex[iInstanceIndex]);
 			
 			oHyperHeuristic = getSRHyperHeuristic(SEEDS[iIterationCounter]);
-			oHyperHeuristic.setTimeLimit(MILLISECONDS_IN_TEN_MINUTES);
+			oHyperHeuristic.setTimeLimit(MILLISECONDS_IN_TEN_MINUTES / 10);
 			oHyperHeuristic.loadProblemDomain(oProblem);
 			oHyperHeuristic.run();
 			

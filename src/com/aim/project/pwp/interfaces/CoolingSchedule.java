@@ -1,4 +1,4 @@
-package com.aim.project.pwp.hyperheuristics.moveAcceptance;
+package com.aim.project.pwp.interfaces;
 
 public interface CoolingSchedule {
 

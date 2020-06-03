@@ -3,9 +3,9 @@ package com.aim.project.pwp.hyperheuristics;
 import com.aim.project.pwp.AIM_PWP;
 import com.aim.project.pwp.SolutionPrinter;
 import com.aim.project.pwp.hyperheuristics.heuristicSelection.RouletteWheelHeuristicSelection;
-import com.aim.project.pwp.hyperheuristics.moveAcceptance.CoolingSchedule;
 import com.aim.project.pwp.hyperheuristics.moveAcceptance.LundyAndMees;
 import com.aim.project.pwp.hyperheuristics.moveAcceptance.SimulateAnnealing;
+import com.aim.project.pwp.interfaces.CoolingSchedule;
 import com.aim.project.pwp.interfaces.PWPSolutionInterface;
 
 import AbstractClasses.HyperHeuristic;

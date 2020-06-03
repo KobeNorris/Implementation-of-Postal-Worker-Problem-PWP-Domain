@@ -1,4 +1,4 @@
-package com.aim.project.pwp.hyperheuristics;
+package com.aim.project.pwp.test;
 
 
 import com.aim.project.pwp.AIM_PWP;

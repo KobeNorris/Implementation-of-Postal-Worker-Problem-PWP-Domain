@@ -37,6 +37,10 @@ public class SR_IE_HH extends HyperHeuristic {
 			h = rng.nextInt(5);
 			
 			double candidate;
+			/**
+			 * According to report requirement, the heuristic set 
+			 * should be comprised of mutation and local search only.
+			 */
 			candidate = oProblem.applyHeuristic(h, 0, 1);
 //			if(h < 5) {
 //				candidate = oProblem.applyHeuristic(h, 0, 1);

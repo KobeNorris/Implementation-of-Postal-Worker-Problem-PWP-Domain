@@ -1,6 +1,5 @@
 package com.aim.project.pwp.test;
 
-import com.aim.project.pwp.hyperheuristics.InitialisationTest_HH;
 import com.aim.project.pwp.runners.HH_Runner_Visual;
 
 import AbstractClasses.HyperHeuristic;
