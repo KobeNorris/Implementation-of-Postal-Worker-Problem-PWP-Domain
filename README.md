@@ -43,7 +43,7 @@ AIM-PROJECT-2020-SCYKW1
 
 ### Scykw1 Hyper-heuristic
 
-![avatar](README/NewStructure.JPG)
+![avatar](README/NewStructure.jpg)
 * **Initialization Method**: Randome Initialization (could use constructive, not allowed in coursework)
 * **Heuristic Selection**: Roulette Wheel Selection
 * **Move Acceptance**: Simulate Annealing with Lundy & Mees cooling
